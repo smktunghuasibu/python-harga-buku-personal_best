@@ -1,11 +1,17 @@
-def harga_bayaran(.........):
-    
+def harga_bayaran(pilihan,kuantiti):
+    if pilihan == 1:
+        harga = 6.00
+        kadar_diskaun = 10
+    elif pilihan == 2:
+        harga = 7.50
+        kadar_diskaun = 8
+    else:
+        harga = 8.90
+        kadar_diskaun = 5
+    PotonganHarga = harga * kuantiti * (kadar_diskaun/100)
+    JumlahHarga = harga * kuantiti - PotonganHarga
+    return PotonganHarga,JumlahHarga
 
-
-
-
-
-    return 
 
 def main():
     print("Senarai belian buku:")
